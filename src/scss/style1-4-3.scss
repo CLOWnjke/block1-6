@@ -1,0 +1,142 @@
+.modal-container--callback {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 102;
+    width: 320px;
+    height: 1762px;
+    background: #FFFFFF;
+    margin-left: auto;
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+
+    @media (min-width: 768px) {
+        width: 440px;
+        height: 1796px;
+    }
+
+    @media (min-width: 1440px) {
+        height: 1884px;
+    }
+
+    .icon-callback--close {
+        width: 40px;
+        height: 40px;
+        background-color: #FF3E79;
+        border-radius: 50%;
+        background-image: url("/src/img/close.svg");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        margin-left: 16px;
+        margin-bottom: 40px;
+    }
+}
+
+
+.callback--open {
+    display: block;
+}
+
+
+.callback-close {
+    padding-top: 24px;
+}
+
+.modal-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+
+    font-family: 'TT Lakes';
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    color: #1B1C21;
+
+    .modal-title__hightlight {
+        width: 4px;
+        height: 40px;
+        border: 2px solid #41F6D7;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+    
+    .modal-title__callback {
+        align-self: flex-end;
+        margin-left: 12px;
+    }
+}
+
+input {
+    width: 272px;
+    height: 48px;
+    border-style: none;
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 8px;
+    padding-left: 16px;
+    margin-left: 16px;
+    margin-bottom: 16px;
+    font-family: 'TT Lakes';
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #B5B6BC;
+
+    @media (min-width: 768px) {
+        width: 376px;
+        margin-left: 32px;
+    }
+}
+
+.modal-footer {
+    width: 288px;
+    font-family: 'TT Lakes';
+    font-size: 14px;
+    line-height: 16px;
+    color: #7E7E82;
+
+    .modal-footer__btn--confirm {
+        box-sizing: border-box;
+        width: 136px;
+        height: 32px;
+        border: 2px solid #FF3E79;
+        border-radius: 16px;
+        color: #FFFFFF;
+        font-weight: 700;
+        text-align: start;
+        padding-left: 8px;
+        padding-bottom: 2px;
+        margin-left: 152px;
+        margin-top: 24px;
+        margin-bottom: 75px;
+        background: url('/src/img/dropdown.svg') no-repeat 85% 50% #FF3E79;
+
+        @media (min-width: 768px) {
+            margin-left: 272px;
+        }
+    }
+
+    .modal-footer__info {
+        width: 288px;
+        margin-left: 16px;
+
+        a {
+            text-decoration: none;
+            color: #FF3E79;
+        }
+
+        @media (min-width: 768px) {
+            width: 376px;
+            margin-left: 32px;
+        }
+    }
+}
+
+
+@media (min-width: 768px) {
+    .link-icon--close-callback {
+        position: absolute;
+        right: 473px;
+    }
+}

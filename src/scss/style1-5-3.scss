@@ -1,0 +1,228 @@
+.slider-3 {
+    height: 232px;
+    overflow-x: hidden;
+
+    @media (min-width: 768px) {
+        height: 100%;
+
+        .swiper-wrapper {
+            flex-direction: column;
+        }
+    }
+}
+
+.swiper-slide--xm {
+    display: none;
+
+    .btn-thirdSlider__btn {
+        background: #F8F8F8;
+
+        .btn-thirdSlider__btn--title {
+            display: inline-block;
+            color: #7E7E82;
+        }
+
+        #card-price {
+            margin-left: 0;
+            margin-right: 45px;
+
+            @media (min-width: 1120px) {
+                margin-right: 168px;
+            }
+        }
+
+        #title-card {
+            width: 372px;
+
+            @media (min-width: 1120px) {
+                width: 470px;
+            }
+        }
+
+        .btn-thirdSlider__btn--text {
+            display: none;
+        }
+    }
+
+    @media (min-width: 768px) {
+        display: block;
+    }
+}
+
+.btn-thirdSlider__btn {
+    box-sizing: border-box;
+    margin: 16px 0  0 8px;
+    width: 260px;
+    height: 200px;
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    font-size: 14px;
+
+    >.btn-thirdSlider__btn--text:nth-child(2) {
+        width: 228px;
+        height: 36px;
+    }
+
+    #first-card {
+        margin-left: 58px;
+    }
+
+
+    @media (min-width: 768px) {
+        width: 720px;
+        height: 63px;
+        display: flex;
+        align-items: center;
+        margin-top: 0;
+        margin-left: 0;
+        border-radius: 0;
+        border: none;
+
+        >.btn-thirdSlider__btn--text:nth-child(2) {
+            width: 372px;
+            margin-left: 16px;
+
+            @media (min-width: 1120px) {
+                width: 470px;
+                margin-left: 24px;
+            }
+        }
+
+        >.btn-thirdSlider__btn--text:nth-child(4) {
+            margin-right: 44px;
+
+            @media (min-width: 1120px) {
+                margin-right: 175px;
+            }
+        }
+
+        #free {
+            margin-right: 22px;
+
+            @media (min-width: 1120px) {
+                margin-right: 153px;
+            }
+        }
+
+        #first-card {
+            margin-left: 60px;
+
+            @media (min-width: 1120px) {
+                margin-left: 140px;
+            }
+        }
+    }
+
+    @media (min-width: 1120px) {
+        width: 1056px;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .btn-thirdSlider__btn--title {
+        margin-top: 16px;
+        margin-left: 16px;
+        font-size: 14px;
+        line-height: 16px;
+        color: #7E7E82;
+
+        @media (min-width: 768px) {
+            display: none;
+        }
+
+        @media (min-width: 1120px) {
+            margin-left: 24px;
+        }
+    }
+
+    .btn-thirdSlider__btn--text {
+        margin-left: 16px;
+        margin-top: 4px;
+        color: #1B1C21;
+
+        @media (min-width: 768px) {
+            margin-left: 0;
+        }
+    }
+    
+    .btn-thirdSlider--container {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.first-slide {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.last-slide {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+a {
+    text-decoration: none;
+
+    .btn-thirdSlider__btn--red {
+        box-sizing: border-box;
+        width: 120px;
+        height: 32px;
+        border: 2px solid #FF3E79;
+        border-radius: 16px;
+        color: #FFFFFF;
+        font-weight: 700;
+        text-align: start;
+        padding-top: 6px;
+        padding-left: 12px;
+        margin-left: 28px;
+        margin-top: 24px;
+        background: url('/src/img/dropdown.svg') no-repeat 89% 50% #FF3E79;
+
+        @media (min-width: 768px) {
+            margin-top: 0;
+        }
+
+        @media (min-width: 1120px) {
+            margin-left: 111px;
+        }
+    }
+}
+
+.border-bottom--first,
+.border-bottom--second,
+.border-bottom--third,
+.border-bottom--four {
+    display: none;
+    position: absolute;
+    width: 688px;
+    border-bottom: 0.5px solid #EAEAEA;
+    z-index: 1;
+
+    @media (min-width: 768px) {
+        display: block;
+    }
+
+    @media (min-width: 1120px) {
+        width: 1008px;
+    }
+}
+
+.border-bottom--first {
+    bottom: 252px;
+}
+
+.border-bottom--second {
+    bottom: 188px;
+}
+
+.border-bottom--third {
+    bottom: 124px;
+}
+
+.border-bottom--four {
+    bottom: 60px;
+}
